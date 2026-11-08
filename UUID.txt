@@ -1,0 +1,21 @@
+ANNA_ID = 05d704d2-2515-4f9f-b754-8d071f2be724
+IVAN_ID = 7d16f063-9812-4986-a74d-beb5b0d10365
+LIKE1_ID = 05d21d3f-fb43-4ec3-973d-5263770893a3
+LIKE2_ID = 
+
+SELECT * FROM "LABA_1_FINAL"."User";
+SELECT * FROM "LABA_1_FINAL"."Profile";
+SELECT * FROM "LABA_1_FINAL"."Preference";
+SELECT * FROM "LABA_1_FINAL"."Like";
+
+SELECT * FROM "LABA_1_FINAL"."User" ORDER BY created_at DESC LIMIT 10;
+SELECT * FROM "LABA_1_FINAL"."Profile" LIMIT 10;
+SELECT * FROM "LABA_1_FINAL"."Preference" LIMIT 10;
+SELECT * FROM "LABA_1_FINAL"."Like" LIMIT 10;
+
+SELECT count(*), count(DISTINCT email), count(DISTINCT phone_number) FROM "LABA_1_FINAL"."User";
+
+TRUNCATE TABLE "LABA_1_FINAL"."Like", "LABA_1_FINAL"."Preference", "LABA_1_FINAL"."Profile", "LABA_1_FINAL"."User";
+
+cls
+python main.py
