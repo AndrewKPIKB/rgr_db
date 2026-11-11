@@ -1,5 +1,3 @@
--- Схема бази даних РГР: сервіс знайомств. PostgreSQL 13+ (gen_random_uuid()).
--- Скрипт можна запускати повторно: наявні таблиці не змінюються.
 CREATE SCHEMA IF NOT EXISTS "LABA_1_FINAL";
 SET search_path TO "LABA_1_FINAL";
 
